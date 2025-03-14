@@ -1,14 +1,46 @@
 // Quotes arrays
 const motivationalQuotes = [
-    {text: "Keep swimming! The current won't carry you forever!", author: "Salmon Rushfin"},
-    {text: "You're o-fish-ally awesome!", author: "Marlin Monroe"},
-    {text: "Don't be koi – make waves!", author: "Gillbert Grape"}
+    {text: "Dive in headfirst—the water's fine and so are your goals!", author: "Anchovy Aristotle"},
+    {text: "Don't let setbacks scale you down!", author: "Finnius Claw"},
+    {text: "Be the shark in a sea of minnows!", author: "Jawdeen Sharp"},
+    {text: "Even the mightiest tuna started as a guppy!", author: "Bubbles McFintastic"},
+    {text: "Life's a current—swim against it and grow stronger!", author: "Tidalia Wavecrest"},
+    {text: "Net working beats not working!", author: "Codfrey Netcaster"},
+    {text: "You're a starfish in a sea of possibilities!", author: "Stella Marina"},
+    {text: "Don't clam up—share your pearls of wisdom!", author: "Shelly Bivalve"},
+    {text: "Stay afloat… even jellyfish know how to drift with purpose!", author: "Bloom Meduzo"},
+    {text: "Reel in your dreams—no catch-and-release today!", author: "Rodney Reelworth"},
+    {text: "Why fit in when you were born to school?", author: "Piranha Picasso"},
+    {text: "The ocean is your oyster… now find that pearl!", author: "Pearlie Clamshell"},
+    {text: "Avoid the bait of doubt—you're a great catch!", author: "Lure McHook"},
+    {text: "Crab your destiny with both claws!", author: "Crustacean Determination"},
+    {text: "Anglerfish rule the dark—shine even when it's pitch black!", author: "Glowbert Deepsea"},
+    {text: "Don't flounder—every tide turns eventually!", author: "Captain Finspire"},
+    {text: "Eel-ieve in yourself—slither past obstacles!", author: "Slick Silverfin"},
+    {text: "Aim higher than the seagull stealing fries!", author: "Wingtip Gullsworth"},
+    {text: "Your potential is as endless as the abyss… dive deeper!", author: "Nemo Nauticus"},
+    {text: "A rising tide lifts all boats—so let's make waves together!", author: "Coral Connors"}
 ];
 
 const demotivationalQuotes = [
     {text: "Why bother? The net always wins...", author: "Red Herring"},
     {text: "You're just a small fish in a big pond...", author: "Red Herring"},
-    {text: "Tomorrow's just another day to be bait...", author: "Red Herring"}
+    {text: "Tomorrow's just another day to be bait...", author: "Red Herring"},
+    {text: "The current's strong and you're getting tired.", author: "Red Herring"},
+    {text: "The ocean doesn't care if you drown.", author: "Red Herring"},
+    {text: "Even if you swim upstream, you'll still end up downstream.", author: "Red Herring"},
+    {text: "You're not even a fish—just plankton.", author: "Red Herring"},
+    {text: "The early fish gets the hook… but you're late anyway.", author: "Red Herring"},
+    {text: "There are plenty of fish in the sea… and you're still alone.", author: "Red Herring"},
+    {text: "Every fishbowl has a lid… and you're trapped.", author: "Red Herring"},
+    {text: "Sharks circle. Always.", author: "Red Herring"},
+    {text: "Tides rise… but so do your regrets.", author: "Red Herring"},
+    {text: "You think you're a catch? The line's been cut.", author: "Red Herring"},
+    {text: "Sink or swim? Either way, you're still wet.", author: "Red Herring"},
+    {text: "Your 'school' of thought? Dropout.", author: "Red Herring"},
+    {text: "Pearls are for clams… and you're shellfish.", author: "Red Herring"},
+    {text: "Dory forgot? So will everyone else.", author: "Red Herring"},
+    {text: "Bubbles rise… your hopes don't.", author: "Red Herring"}
 ];
 
 // PWA Installation
