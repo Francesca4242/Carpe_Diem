@@ -83,8 +83,9 @@ document.getElementById('carp').addEventListener('click', () => {
     
     // Position bubble above fish
     const fishRect = document.getElementById('carp').getBoundingClientRect();
-    speechBubble.style.left = `${fishRect.left + fishRect.width/2 - 125}px`;
-    speechBubble.style.top = `${fishRect.top - 100}px`;
+    const bubbleRect = speechBubble.getBoundingClientRect();
+    speechBubble.style.left = `${fishRect.left + fishRect.width/2 - bubbleRect.width/2}px`;
+    speechBubble.style.top = `${fishRect.top - bubbleRect.height}px`;
     
     setTimeout(() => {
         speechBubble.style.display = 'none';
