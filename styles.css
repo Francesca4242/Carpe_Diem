@@ -14,7 +14,7 @@ h1 {
 }
 
 #carp {
-    width: 300px;
+    width: 76%;
     cursor: pointer;
     transition: transform 0.3s;
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
