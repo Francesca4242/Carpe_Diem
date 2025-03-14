@@ -16,7 +16,7 @@ let deferredPrompt;
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
-    document.getElementById('installButton').style.display = 'block';
+    document.getElementById('installButton').style.display = 'inline-block';
 });
 
 document.getElementById('installButton').addEventListener('click', async () => {
