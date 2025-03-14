@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(to bottom, #87CEEB, #1E90FF);
     font-family: 'Comic Sans MS', cursive;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin: 0;
     padding: 20px;
     display: flex;
