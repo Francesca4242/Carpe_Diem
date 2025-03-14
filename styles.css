@@ -86,6 +86,9 @@ h1 {
     .fish-container {
         margin: 10px 0;
     }
+    body {
+        flex-direction: row;
+    }
 }
 
 @media (max-width: 480px) {
