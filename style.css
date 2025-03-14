@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #FFD700;
+    text-shadow: 2px 2px #00008B;
+    font-size: 2.5em;
+}
+
+#carp {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+#carp:hover {
+    transform: scale(1.05);
+}
+
+.speech-bubble {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    max-width: 250px;
+    min-height: 50px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+    animation: bubbleFloat 2s infinite;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: white;
+    bottom: -30px;
+    left: 50%;
+}
+
+@keyframes bubbleFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.fish-button {
+    background: #FF6B6B;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.fish-button:hover {
+    transform: scale(1.1);
+    background: #FF5252;
+}
