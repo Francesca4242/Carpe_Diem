@@ -39,9 +39,9 @@
         }
 
         .fish {
-            width: 150px;
+            width: 80px;
             height: auto;
-            animation: swim 10s linear infinite;
+            position: absolute;
         }
 
         .bubbles {
@@ -63,11 +63,6 @@
         }
 
         /* Animations */
-        @keyframes swim {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
         @keyframes float {
             0% { transform: translateY(0); opacity: 0; }
             50% { opacity: 1; }
@@ -90,7 +85,7 @@
             }
 
             .fish {
-                width: 100px;
+                width: 60px;
             }
         }
     </style>
@@ -98,10 +93,15 @@
 <body>
     <div class="container">
         <h1>Fish Meditation</h1>
-         <a href="index.html">Go Back</a>
+        <a href="index.html">Go Back</a>
         <p>Breathe deeply. Let the gentle movement of the fish guide you into a state of calm and peace.</p>
-        <img src="many-carp.jpg" alt="Meditative Fish" class="fish">
     </div>
+
+    <!-- Fish elements -->
+    <img src="many-carp.jpg" alt="Fish 1" class="fish">
+    <img src="many-carp-2.jpg" alt="Fish 2" class="fish">
+    <img src="many-carp-3.jpg" alt="Fish 3" class="fish">
+    <img src="many-carp-4.jpg" alt="Fish 4" class="fish">
 
     <!-- Bubbles for ambiance -->
     <div class="bubbles">
@@ -111,5 +111,37 @@
         <div class="bubble" style="left: 70%; animation-delay: 1s;"></div>
         <div class="bubble" style="left: 90%; animation-delay: 3s;"></div>
     </div>
+
+    <script>
+        // JavaScript to make fish move and bounce
+        const fishElements = document.querySelectorAll('.fish');
+
+        fishElements.forEach(fish => {
+            let x = Math.random() * window.innerWidth;
+            let y = Math.random() * window.innerHeight;
+            let dx = (Math.random() - 0.5) * 4; // Horizontal speed
+            let dy = (Math.random() - 0.5) * 4; // Vertical speed
+
+            function moveFish() {
+                x += dx;
+                y += dy;
+
+                // Bounce off the edges
+                if (x + fish.offsetWidth > window.innerWidth || x < 0) {
+                    dx = -dx;
+                }
+                if (y + fish.offsetHeight > window.innerHeight || y < 0) {
+                    dy = -dy;
+                }
+
+                fish.style.left = `${x}px`;
+                fish.style.top = `${y}px`;
+
+                requestAnimationFrame(moveFish);
+            }
+
+            moveFish();
+        });
+    </script>
 </body>
 </html>
