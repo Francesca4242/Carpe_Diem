@@ -29,6 +29,14 @@ document.getElementById('installButton').addEventListener('click', async () => {
     }
 });
 
+window.addEventListener('load', () => {
+    const now = new Date();
+    const isDaytime = now.getHours() >= 6 && now.getHours() < 18;
+    if (!isDaytime) {
+        document.querySelector('#carp').src='red-herring.png';
+    }
+});
+
 // Fish Click Handler
 document.getElementById('carp').addEventListener('click', () => {
     const speechBubble = document.getElementById('speechBubble');
