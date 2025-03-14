@@ -1,13 +1,13 @@
 const CACHE_NAME = 'carpe-diem-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/carp.png',
-  '/red-herring.png',
-  '/fish-icon-192.png',
-  '/fish-icon-512.png'
+  './',
+  './index.html',
+  './styles.css',
+  './app.js',
+  './carp.png',
+  './red-herring.png',
+  './fish-icon-192.png',
+  './fish-icon-512.png'
 ];
 
 self.addEventListener('install', (event) => {
