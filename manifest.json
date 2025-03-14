@@ -4,8 +4,8 @@
     "theme_color": "#87CEEB",
     "background_color": "#1E90FF",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "/Carpe_Diem/",
+    "start_url": "/Carpe_Diem/",
     "icons": [
         {
             "src": "fish-icon-192.png",
