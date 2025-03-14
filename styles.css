@@ -12,8 +12,8 @@ body {
 
 h1 {
     color: #FFD700;
-    text-shadow: 2px 2px #00008B;
-    font-size: clamp(1.5rem, 6vw, 3rem);
+    text-shadow: 4px 4px #00008B;
+    font-size: clamp(3rem, 12vw, 6rem);
     margin: 10px 0;
 }
 
