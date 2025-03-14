@@ -51,7 +51,7 @@ h1 {
 }
 
 .speech-bubble {
-    position: absolute;
+    position: fixed;
     background: white;
     padding: 20px;
     border-radius: 10px;
