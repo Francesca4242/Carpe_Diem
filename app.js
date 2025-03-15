@@ -68,7 +68,7 @@ window.addEventListener('load', () => {
         document.querySelector('#carp').src='red-herring.png';
     }
 });
-
+ 
 // Fish Click Handler
 document.getElementById('carp').addEventListener('click', () => {
     const speechBubble = document.getElementById('speechBubble');
